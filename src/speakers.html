@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <include src="views/head.html"></include>
+    <title>Ponents – Ecocircular25</title>
+  </head>
+  <body class="bg-primary text-white font-sans">
+    <!-- Header -->
+    <include src="./views/header.html"></include>
+
+    <main class="bg-primary text-white pt-8 pb-0 px-4">
+      <div class="bg-light max-w-screen-xl mx-auto px-6 py-8">
+        <!-- Títol principal -->
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-center text-primary mb-12"
+        >
+          Ponents de les conferències
+        </h1>
+
+        <!-- Grid de ponents -->
+        <section class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <include src="views/speaker-card.html"></include>
+          <include src="views/speaker-card.html"></include>
+          <include src="views/speaker-card.html"></include>
+          <article
+            class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
+          >
+            <img
+              src="./assets/images/speakers/speaker4.jpg"
+              alt="Speaker 4"
+              class="w-full h-auto"
+            />
+            <p class="mt-4 text-sm text-gray-600 font-medium">14.MAY.2025</p>
+            <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
+              Beneficis ambientals
+            </h3>
+            <p class="mt-1 mb-4 px-4 text-base text-gray-700">Carme Puig</p>
+          </article>
+
+          <article
+            class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
+          >
+            <img
+              src="./assets/images/speakers/speaker5.jpg"
+              alt="Speaker 5"
+              class="w-full h-auto"
+            />
+            <p class="mt-4 text-sm text-gray-600 font-medium">15.MAY.2025</p>
+            <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
+              Actua ara! (I)
+            </h3>
+            <p class="mt-1 mb-4 px-4 text-base text-gray-700">
+              Manel Prinmirat
+            </p>
+          </article>
+
+          <article
+            class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
+          >
+            <img
+              src="./assets/images/speakers/speaker6.jpg"
+              alt="Speaker 6"
+              class="w-full h-auto"
+            />
+            <p class="mt-4 text-sm text-gray-600 font-medium">15.MAY.2025</p>
+            <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
+              Actua ara! (II)
+            </h3>
+            <p class="mt-1 mb-4 px-4 text-base text-gray-700">
+              Margarida Ferrer
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <include src="./views/footer.html"></include>
+
+    <!-- JS -->
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,80 +1,100 @@
 <!DOCTYPE html>
 <html lang="ca">
   <head>
+    <!-- Includes shared <head> section: metadata, links, etc. -->
     <include src="views/head.html"></include>
     <title>Ponents – Ecocircular25</title>
   </head>
   <body class="bg-primary text-white font-sans">
-    <!-- Header -->
+    <!-- Includes site header with logo and navigation -->
     <include src="./views/header.html"></include>
 
     <main class="bg-primary text-white pt-8 pb-0 px-4">
       <div class="bg-light max-w-screen-xl mx-auto px-6 py-8">
-        <!-- Main title -->
+        <!-- Main title of the page -->
         <h1 class="page-title">PONENTS DE LES CONFERÈNCIES</h1>
 
-        <!-- Speakers grid -->
+        <!-- Speakers grid: dynamically includes 6 speaker cards -->
         <section class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <include src="views/speaker-card.html"></include>
-          <include src="views/speaker-card.html"></include>
-          <include src="views/speaker-card.html"></include>
+          <!-- Speaker card 1 -->
+          <include
+            src="views/speaker-card.html"
+            locals='{
+  "img": "assets/images/speakers/speaker1.jpg",
+  "alt": "Foto de Lars",
+  "date": "12.MAY.2025",
+  "title": "Introducció economia circular",
+  "name": "Lars Fredrik Frøislie"
+}'
+          ></include>
 
-          <article
-            class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
-          >
-            <img
-              src="./assets/images/speakers/speaker4.jpg"
-              alt="Speaker 4"
-              class="w-full h-auto"
-            />
-            <p class="mt-4 text-sm text-gray-600 font-medium">14.MAY.2025</p>
-            <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
-              Beneficis ambientals
-            </h3>
-            <p class="mt-1 mb-4 px-4 text-base text-gray-700">Carme Puig</p>
-          </article>
+          <!-- Speaker card 2 -->
+          <include
+            src="views/speaker-card.html"
+            locals='{
+  "img": "assets/images/speakers/speaker2.jpg",
+  "alt": "Foto de Julia",
+  "date": "12.MAY.2025",
+  "title": "Principis clau (I)",
+  "name": "Bonita Pietila"
+}'
+          ></include>
 
-          <article
-            class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
-          >
-            <img
-              src="./assets/images/speakers/speaker5.jpg"
-              alt="Speaker 5"
-              class="w-full h-auto"
-            />
-            <p class="mt-4 text-sm text-gray-600 font-medium">15.MAY.2025</p>
-            <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
-              Actua ara! (I)
-            </h3>
-            <p class="mt-1 mb-4 px-4 text-base text-gray-700">
-              Manel Prinmirat
-            </p>
-          </article>
+          <!-- Speaker card 3 -->
+          <include
+            src="views/speaker-card.html"
+            locals='{
+  "img": "assets/images/speakers/speaker3.jpg",
+  "alt": "Foto de Carme",
+  "date": "13.MAY.2025",
+  "title": "Principis clau (II)",
+  "name": "Massayoshi Takanaka"
+}'
+          ></include>
 
-          <article
-            class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
-          >
-            <img
-              src="./assets/images/speakers/speaker6.jpg"
-              alt="Speaker 6"
-              class="w-full h-auto"
-            />
-            <p class="mt-4 text-sm text-gray-600 font-medium">15.MAY.2025</p>
-            <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
-              Actua ara! (II)
-            </h3>
-            <p class="mt-1 mb-4 px-4 text-base text-gray-700">
-              Margarida Ferrer
-            </p>
-          </article>
+          <!-- Speaker card 4 -->
+          <include
+            src="views/speaker-card.html"
+            locals='{
+  "img": "assets/images/speakers/speaker4.jpg",
+  "alt": "Foto de Carme",
+  "date": "14.MAY.2025",
+  "title": "Beneficis ambientals",
+  "name": "Carme Puig"
+}'
+          ></include>
+
+          <!-- Speaker card 5 -->
+          <include
+            src="views/speaker-card.html"
+            locals='{
+  "img": "assets/images/speakers/speaker5.jpg",
+  "alt": "Foto de Manel",
+  "date": "15.MAY.2025",
+  "title": "Actua ara (I)",
+  "name": "Manel Prinmirat"
+}'
+          ></include>
+
+          <!-- Speaker card 6 -->
+          <include
+            src="views/speaker-card.html"
+            locals='{
+  "img": "assets/images/speakers/speaker6.jpg",
+  "alt": "Foto de Margarida",
+  "date": "15.MAY.2025",
+  "title": "Actua ara (II)",
+  "name": "Margarida Ferrer"
+}'
+          ></include>
         </section>
       </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Includes site footer -->
     <include src="./views/footer.html"></include>
 
-    <!-- JS -->
+    <!-- Main JavaScript entry point -->
     <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>

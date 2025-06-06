@@ -1,21 +1,14 @@
-<article
-  class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1"
->
-  <!-- Speaker image -->
-  <img
-    src="./assets/images/speakers/speaker1.jpg"
-    alt="Speaker 1"
-    class="w-full h-auto"
-  />
-
+<!-- Speaker card component -->
+<article class="bg-white text-center rounded-xl overflow-hidden shadow transition-transform duration-300 hover:-translate-y-1">
+  <!-- Speaker image (path and alt text passed dynamically via locals) -->
+  <img src="{{ img }}" alt="{{ alt }}" class="w-full h-auto" />
+  
   <!-- Date of the talk -->
-  <p class="mt-4 text-sm text-gray-600 font-medium">12.MAY.2025</p>
-
-  <!-- Talk title -->
-  <h3 class="mt-2 px-4 text-2xl font-bold text-primary">
-    Introducció a l'economia circular
-  </h3>
-
-  <!-- Speaker's name -->
-  <p class="mt-1 mb-4 px-4 text-base text-gray-700">Lars Fredrik Frøislie</p>
+  <p class="mt-4 text-sm text-gray-600 font-medium">{{ date }}</p>
+  
+  <!-- Title of the talk -->
+  <h3 class="mt-2 px-4 text-2xl font-bold text-primary">{{ title }}</h3>
+  
+  <!-- Name of the speaker -->
+  <p class="mt-1 mb-4 px-4 text-base text-gray-700">{{ name }}</p>
 </article>

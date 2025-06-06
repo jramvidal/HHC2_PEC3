@@ -1,0 +1,11 @@
+// Reusable class for main page titles.
+// Applies consistent responsive sizing, font weight, alignment, color, and spacing.
+.page-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-center text-primary mb-12;
+}
+
+// Reusable class for primary call-to-action buttons.
+// Includes spacing, background color, text color, padding, rounded corners, hover effect, and smooth transition.
+.btn-primary {
+  @apply inline-block mt-4 bg-primary text-white font-semibold py-2 px-4 rounded hover:bg-muted transition;
+}

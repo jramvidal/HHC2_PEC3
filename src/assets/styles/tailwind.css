@@ -1,3 +1,8 @@
+/* Import Tailwind's base styles (includes Normalize.css and base typography) */
 @tailwind base;
+
+/* Import component classes (can be extended with custom components using @layer components) */
 @tailwind components;
+
+/* Import utility classes (e.g., color utilities, etc.) */
 @tailwind utilities;
